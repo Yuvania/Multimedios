@@ -1,0 +1,163 @@
+.footer{
+        position: static;
+        bottom: 0;
+        box-sizing: border-box;
+        width: 100vw;
+        background-color: $primary-color;
+        text-align: center;
+        height: 200px;
+        border-top: 4px solid $secondary-color;
+
+        &__copyright{
+            text-align: end;
+            font-size: 19px;
+            color: $secondary-color;
+        }
+        &__title{
+        
+            font-size: 30px;
+            color: $secondary-color;
+            margin-top: 20px;
+            margin-bottom: 30px;
+            
+        }
+
+}
+
+.networks{
+     display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+     justify-content: space-around;
+     margin-bottom: 20px;
+
+    &__links{
+        text-decoration: none;
+
+        &--li{
+            font-size: 40px;
+            color: $secondary-color;
+            padding:20px ;
+
+            &:hover{
+                color :$hover-icons;
+                transition:all .5s ease-in-out;
+            }
+        }
+    }
+
+
+}
+
+
+@media (max-width:1050px){
+    .footer{
+        &__copyright{
+            font-size: 17px;
+        }
+    
+        &__title{      
+            margin-top: 20px; 
+            font-size: 26px;         
+        }
+    
+    }
+    
+    .networks{
+        margin-bottom: 15px;
+        &__links{
+    
+            &--li{
+                font-size: 35px;
+            }
+        }
+    
+    
+    }
+}
+
+@media (max-width:608px){
+    .footer{
+    
+        &__copyright{
+            font-size: 14px;
+        }
+    
+        &__title{
+           
+            font-size: 20px;
+            margin-top: 20px; 
+            
+        }
+    
+    }
+    
+    .networks{    
+        margin-bottom: 15px;
+        &__links{
+    
+            &--li{
+                font-size: 30px;
+            }
+        }
+    
+    
+    }
+}
+
+
+
+@media (max-width:400px){
+    .footer{
+        &__copyright{
+            font-size: 10px;
+        }
+    
+        &__title{      
+            margin-top: 20px; 
+            font-size: 15px;         
+        }
+    
+    }
+    
+    .networks{
+        margin-bottom: 15px;
+        &__links{
+    
+            &--li{
+                font-size: 20px;
+            }
+        }
+    
+    
+    }
+}
+
+
+
+
+@media (max-width:300px){
+    .footer{
+        &__copyright{
+            font-size: 7px;
+        }
+    
+        &__title{  
+            margin-top: 20px;     
+            font-size: 13px;         
+        }
+    
+    }
+    
+    .networks{
+        margin-bottom: 15px;
+        &__links{
+    
+            &--li{
+                font-size: 15px;
+            }
+        }
+    
+    
+    }
+}
